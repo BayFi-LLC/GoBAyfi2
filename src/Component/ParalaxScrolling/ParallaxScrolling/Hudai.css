@@ -1,0 +1,18 @@
+ 
+.hudai_color{
+    background: linear-gradient(117deg, #B8DE19 0%, rgba(255, 255, 255, 0.25) 100.86%);
+
+    backdrop-filter: blur(48px);
+    -webkit-backdrop-filter: blur(48px);  
+
+}
+
+  .hudai-container {
+    height: 100vh;  
+    justify-content: start; 
+    margin: 0px; 
+    padding: 0px;
+      
+  }
+ 
+  

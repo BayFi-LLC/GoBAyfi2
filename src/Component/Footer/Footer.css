@@ -1,0 +1,109 @@
+.Btn2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 120px;
+  height: 72px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease, border-radius 0.3s ease;
+  background-color: black;
+  backdrop-filter: blur(10px);
+}
+
+.sign2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.text2 {
+  position: absolute;
+  left: 0;
+  width: 0;
+  opacity: 0;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  white-space: nowrap;
+  transition: width 0.3s ease, opacity 0.3s ease;
+  margin-top: 3px;
+}
+
+.Btn2:hover {
+  width: 200px;
+}
+
+.Btn2:hover .sign2 {
+  transform: translateX(30%);
+}
+
+.Btn2:hover .text2 {
+  opacity: 1;
+  width: auto;
+  left: 10%;
+}
+
+/* From Uiverse.io by vinodjangid07 */
+/* From Uiverse.io by waliddu001 */
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgb(20, 20, 20);
+  border: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 0px 4px rgba(184, 222, 25, 0.8);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.svgIcon {
+  width: 12px;
+  transition-duration: 0.3s;
+}
+
+.svgIcon path {
+  fill: #B8DE19;
+}
+
+.button:hover {
+  width: 140px;
+  border-radius: 50px;
+  transition-duration: 0.3s;
+  background-color: #b8de19;
+  align-items: center;
+}
+
+.button:hover .svgIcon {
+  /* width: 20px; */
+  transition-duration: 0.3s;
+  transform: translateY(-200%);
+}
+
+.button::before {
+  position: absolute;
+  bottom: -20px;
+  content: "BACK TO TOP";
+  color: #091609;
+  /* transition-duration: .3s; */
+  font-size: 0px;
+}
+
+.button:hover::before {
+  font-size: 13px;
+  opacity: 1;
+  bottom: unset;
+  /* transform: translateY(-30px); */
+  transition-duration: 0.3s;
+}

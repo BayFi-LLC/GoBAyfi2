@@ -1,0 +1,67 @@
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: width 0.3s ease, border-radius 0.3s ease;
+  background-color:rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(10px);
+  
+}
+
+/* plus sign */
+.sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* text */
+.text {
+  position: absolute;
+  left: 0;
+  width: 0;
+  opacity: 0;
+  color: white;
+  font-size: 10px;
+  font-weight: 400;
+  white-space: nowrap; /* Prevent text from wrapping */
+  transition: width 0.3s ease, opacity 0.3s ease;
+  margin-top: 3px;  
+}
+
+/* hover effect on button */
+.img_main:hover .Btn  {
+  width: 120px; /* Extend the button on hover */
+  border-radius: 40px;
+}
+
+.img_main:hover .Btn  .sign {
+  transform: translateX(30%); 
+}
+
+.img_main:hover .Btn  .text {
+  opacity: 1;
+  width: auto; 
+  left: 10%;  
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+.img_main{
+  overflow: hidden;
+}
+.img{
+  display: block;  
+  transition: transform 0.3s ease;
+}
+
+.img_main:hover .img {
+  transform: scale(1.1);  
+}

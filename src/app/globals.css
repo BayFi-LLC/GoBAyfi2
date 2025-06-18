@@ -1,0 +1,308 @@
+@import "tailwindcss";
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  font-family: var(--font-bayfi), sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  font-family: var(--font-bayfi), sans-serif;
+}
+/* nav button start */
+.btn5 {
+  width: 90px;
+  height: 17px;
+
+  color: #fff;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  text-align: center;
+}
+
+.btn5 span {
+  font-size: 15px;
+
+  letter-spacing: 1px;
+  transition: top 0.3s ease-in-out;
+  line-height: 50px;
+}
+
+.btn-text-one1 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two2 {
+  color: #b8de19;
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn5:hover .btn-text-one1 {
+  top: -100%;
+}
+
+.btn5:hover .btn-text-two2 {
+  top: 50%;
+}
+.font-extralight {
+  font-weight: 200;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.5;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+/* nav button end */
+/* snake button start */
+
+.snake-button {
+  width: 300px;
+  text-align: center;
+  border-radius: 100px;
+  border: 1px solid transparent;
+  background: #091609;
+  padding: 20px 24px;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  font-weight: medium;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+.snake-button::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  border-radius: 100px;
+  border: 4px solid #b8de19;
+  box-shadow: 0 0 10px #b8de19;
+  animation: snake-border 2s linear infinite;
+}
+
+@keyframes snake-border {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  25% {
+    clip-path: inset(0 0 100% 0);
+  }
+  50% {
+    clip-path: inset(0 0 0 100%);
+  }
+  75% {
+    clip-path: inset(100% 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
+}
+
+.bals {
+  margin-top: 40px;
+  font-weight: 500;
+
+  background: #000000;
+  display: inline-flex;
+  padding: 15px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  color: white;
+
+  /* transition: background 6000ms ease; */
+}
+.bals:hover {
+  animation: smooth-gradient-shift 1800ms infinite linear;
+  border: 1px solid #b8de19;
+  cursor: pointer;
+}
+.backgroudMoveing:hover {
+  animation: smooth-gradient-shift 1800ms linear infinite;
+
+  cursor: pointer;
+}
+.backgroudMoveing {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.backgroudMoveings:hover {
+  /* --angle: 0deg; */
+  /* animation: smooth-gradient-shift 2200ms linear infinite; */
+  /* background: linear-gradient(var(--angle), #b8de19 0%, #0c1f0c 100%); */
+  border: 1px solid #b8de19;
+
+  background: linear-gradient(180deg, #b8de19 0%, #0c1f0c 100%);
+
+  cursor: pointer;
+}
+
+/* @property --angle {
+  syntax: '<angle>';
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@keyframes smooth-gradient-shift {
+  to {
+    --angle: 360deg;
+  }
+} */
+/* snake button end */
+
+.backgroudMoveing {
+  font-size: 15px;
+}
+
+.backgroudMoveing {
+  margin-top: 40px;
+  font-weight: 500;
+
+  background: linear-gradient(0deg, #b8de19 0%, #0c1f0c 100%);
+  display: inline-flex;
+  padding: 15px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 100px;
+  color: white;
+  border-top: 1px solid #b8de19;
+  transition: background 6000ms ease;
+}
+
+.card {
+  position: absolute; /* Ensure cards can stack and move independently */
+  width: 100%; /* Adjust as per your design */
+  height: auto; /* Maintain proportions */
+  transform: translateY(700px); /* Initial position if you animate 'y' */
+  will-change: transform; /* Optimize performance for animations */
+}
+
+.glass {
+  background: rgba(12, 31, 12, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.glass2 {
+  background: rgba(12, 31, 12, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.glass3 {
+  background: rgba(12, 31, 12, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#smooth-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#smooth-content {
+  will-change: transform;
+  min-height: 100vh;
+  position: relative; /* Important */
+}
+
+.rotating-image {
+  animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* nav button start */
+.btn51 {
+  width: 90px;
+  height: 17px;
+
+  color: white;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+  text-align: center;
+}
+
+.btn51 span {
+  font-size: 15px;
+
+  letter-spacing: 1px;
+  transition: top 0.3s ease-in-out;
+  line-height: 50px;
+  font-weight: 400;
+}
+
+.btn-text-one11 {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn-text-two21 {
+  color: #b8de19;
+  position: absolute;
+  width: 100%;
+  top: 150%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.btn51:hover .btn-text-one1 {
+  top: -100%;
+}
+
+.btn51:hover .btn-text-two2 {
+  top: 50%;
+}
