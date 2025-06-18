@@ -1,6 +1,6 @@
 import React from "react";
 import Navbar2 from "../Navbar/Navber2";
-import Animation from "../HeroAnimation/Animation";
+// import Animation from "../HeroAnimation/Animation";
 import Container from "../HeroAnimation/Container";
 import MarqueeSection from "../HeroAnimation/MarqueeSection";
 
@@ -15,7 +15,7 @@ const Hero = () => {
         
       </div>
       <div className="hidden lg:block">
-        <Animation></Animation>
+        {/* <Animation></Animation> */}
       </div>
       <div className="block lg:hidden">
         {" "}
