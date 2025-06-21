@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bayfi2.vercel.app/sitemap
+Sitemap: https://gobayfi.com/sitemap
