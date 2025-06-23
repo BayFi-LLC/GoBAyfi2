@@ -89,6 +89,7 @@ export default function RootLayout({ children }) {
             url: "https://www.gobayfi.com/",
             logo: "https://www.gobayfi.com/Image/favicon.ico",
             sameAs: [
+              "https://g.co/kgs/nM2at28",
               "https://www.linkedin.com/company/gobayfi",
               "https://www.youtube.com/@gobayfi",
               "https://www.facebook.com/bayfistudio",
