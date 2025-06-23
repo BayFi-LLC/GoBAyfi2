@@ -1,4 +1,11 @@
 User-agent: *
+Disallow: /_next/
+Disallow: /favicon.ico
+Disallow: /*.ttf$
+Disallow: /*.woff$
+Disallow: /*.woff2$
+Disallow: /*.eot$
+Disallow: /*.otf$
 Allow: /
 
-Sitemap: https://gobayfi.com/sitemap
+Sitemap: https://gobayfi.com/sitemap.xml
