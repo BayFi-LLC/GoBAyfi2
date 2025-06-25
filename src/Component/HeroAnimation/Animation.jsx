@@ -157,7 +157,7 @@ const Animation = () => {
                       background:
                         "linear-gradient(180deg, #B8DE19 0%, #0C1F0C 100%)",
                     }}
-                    className="w-[320px] h-16 flex justify-center items-center text-xl rounded-[2rem] border border-[#B8DE19]
+                    className="w-[320px] h-[56px] flex justify-center items-center text-xl rounded-[2rem] border border-[#B8DE19]
                  transition-[box-shadow] duration-300 ease-linear hover:shadow-[0px_0px_58.8px_0px_#B8DE19] cursor-pointer"
                   >
                     Let’s Build Your Brand Today
