@@ -16,10 +16,16 @@ const Container = () => {
         <h1 className="w-12/12 mx-auto -mt-6 overflow-hidden text-center text-[28px] font-normal text-white sm:w-11/12 sm:text-4xl pb-10">
           Your cutting edge Design, Development & Growth partner
         </h1>
- <div onClick={openModal}>
-   <SvgBorderAnimation></SvgBorderAnimation>
-        
- </div>
+        <div
+          onClick={() => openModal()}
+          style={{
+            background: "linear-gradient(180deg, #B8DE19 0%, #0C1F0C 100%)",
+          }}
+          className="w-[290px] h-[55px] flex justify-center items-center text-lg rounded-[2rem] border border-[#B8DE19]
+                transition-[box-shadow] duration-300 ease-linear hover:shadow-[0px_0px_58.8px_0px_#B8DE19] cursor-pointer"
+        >
+          Let’s Build Your Brand Today
+        </div>
 
         {/* <button onClick={openModal} className=" snake-button ">
           Let’s Build Your Brand Today

@@ -96,14 +96,12 @@ const Animation = () => {
         className="relative mx-auto mt-11 flex h-[53vh] w-10/12 items-center justify-center overflow-hidden rounded-[20px] bg-[#091609] text-xl 2xl:h-[60vh] z-50"
       >
         <Canvas
-        
           style={{
             position: "absolute",
             top: -150,
             left: -150,
             height: "100vh",
             width: "100vw",
-          
           }}
         >
           <EffectComposer>
@@ -119,8 +117,8 @@ const Animation = () => {
               intensity={0.3}
               rainbow={false}
               blend={5} // ✅ allow blending over background
-              showBackground={true} 
-              backgroundColor="#091609" 
+              showBackground={true}
+              backgroundColor="#091609"
               fluidColor="#B8DE19"
               mousePosition={mouseRef.current}
             />
@@ -152,15 +150,17 @@ const Animation = () => {
             </DreiText>
             <Html position={positions.htmlPosition} center>
               <div>
-                {isVisible && ( // Conditional rendering
+                {isVisible && (
                   <div
-                    onClick={() => {
-                      openModal();
-                     
+                    onClick={() => openModal()}
+                    style={{
+                      background:
+                        "linear-gradient(180deg, #B8DE19 0%, #0C1F0C 100%)",
                     }}
-                    className=" backgroudMoveings  z-[100] w-[289px] rounded-4xl   overflow-hidden bg-#091609"
+                    className="w-[320px] h-16 flex justify-center items-center text-xl rounded-[2rem] border border-[#B8DE19]
+                 transition-[box-shadow] duration-300 ease-linear hover:shadow-[0px_0px_58.8px_0px_#B8DE19] cursor-pointer"
                   >
-                    <SvgBorderAnimation></SvgBorderAnimation>
+                    Let’s Build Your Brand Today
                   </div>
                 )}
               </div>
