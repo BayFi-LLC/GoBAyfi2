@@ -79,7 +79,7 @@
 
 .button:hover {
   width: 140px;
-  border-radius: 50px;
+  border-radius: 999px;
   transition-duration: 0.3s;
   background-color: #b8de19;
   align-items: center;
