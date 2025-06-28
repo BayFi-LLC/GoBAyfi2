@@ -10,11 +10,9 @@ import CustomCursor from "@/Component/CustomCursor/CustomCursor";
 import ClientWrapper from "@/Component/Sesion/ClientWrapper";
 import CookieConsentBanner from "@/Component/Cookies/CookieConsentBanner";
 
-
 export const metadata = {
   title: "BayFi",
-  description:
-    "✦ Cutting edge design, development & growth partner",
+  description: "✦ Cutting edge design, development & growth partner",
   keywords: [
     "BayFi",
     "BayFi Studio",
@@ -54,9 +52,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className={bayfiFont.variable} data-arp="" webcrx="">
       <head>
         {/* ✅ Basic SEO Meta */}
-        <title>
-          BayFi
-        </title>
+        <title>BayFi</title>
         <meta
           name="description"
           content="✦ Cutting edge design, development & growth partner"
@@ -88,6 +84,22 @@ export default function RootLayout({ children }) {
             name: "BayFi",
             url: "https://www.gobayfi.com/",
             logo: "https://www.gobayfi.com/Image/favicon.ico",
+            description: "Cutting edge design, development & growth partner.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress:
+                "Near By Police Officer Mess, Keeramotita Moszid Road",
+              addressLocality: "Rangpur City",
+              postalCode: "5400",
+              addressCountry: "BD",
+            },
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                telephone: "+880131395681",
+                contactType: "customer service",
+              },
+            ],
             sameAs: [
               "https://g.co/kgs/nM2at28",
               "https://www.linkedin.com/company/gobayfi",
@@ -111,16 +123,13 @@ export default function RootLayout({ children }) {
           <CustomCursor></CustomCursor>
           <BodyStyle />
           <ClientWrapper>
-          {children}
-              <CookieConsentBanner />
-        </ClientWrapper>
+            {children}
+            <CookieConsentBanner />
+          </ClientWrapper>
           <Contact />
           <Footer />
         </SmoothScrolling>
-          {/* <GoogleAnalytics gaId="G-PEJ72JDX1V" /> */}
-          
-          
-      
+        {/* <GoogleAnalytics gaId="G-PEJ72JDX1V" /> */}
       </body>
     </html>
   );
